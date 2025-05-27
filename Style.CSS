@@ -1,0 +1,566 @@
+@font-face {
+    font-family: "myFont";
+    src: url("Jua,Orbitron/Orbitron/static/Orbitron-Black.ttf");
+}
+
+@font-face{
+    font-family: "myFont2";
+    src: url("Jua,Montserrat/Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: relative;
+}
+
+.titre {
+    position: absolute;
+    text-align: center;
+    font-family: "myFont", "Orbitron", sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    top: 200px;
+    letter-spacing: 4%;
+    font-weight: bold;
+    z-index: 100;
+}
+
+.image-fond {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image1 {
+    margin-top: -10px;
+    box-shadow: 40px 40px #5E286D;
+}
+
+.card-image-2 h3 {
+    color: white;
+    font-size: 30px;
+    font-family: "myFont", "Orbitron", sans-serif;
+    text-align: left;
+    padding-bottom: 20px;
+    margin-bottom: -30px;
+    letter-spacing: 4%;
+    font-weight: bold;
+}
+
+.card-image-2 img {
+    margin-top: 10px;
+    box-shadow: 40px 40px #cc99db;
+}
+
+.card-image-3 h3 {
+    margin-top: 105px;
+}
+
+.card-image-3 h3 {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-family: "myFont", "Orbitron", sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: -30px;
+    letter-spacing: 4%;
+    font-weight: bold;
+}
+
+.card-image-3 img {
+    margin-top: 10px;
+    box-shadow: 40px 40px #5E286D;
+}
+
+.card-image-4 {
+    margin-top: 155px;
+    margin-bottom: 60px;
+}
+
+.card-image-4 h3 {
+    color: white;
+    font-size: 30px;
+    text-align: left;
+    font-family: "myFont", "Orbitron", sans-serif;
+    padding-bottom: 20px;
+    margin-bottom: -30px;
+    letter-spacing: 4%;
+    font-weight: bold;
+}
+
+.card-image-4 img {
+    margin-top: 10px;
+    box-shadow: 40px 40px #cc99db;
+}
+
+.menu {
+    background-color: #cc99db;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: -20px;
+    margin-top: -10px;
+    width: 100%;
+    z-index: 100;
+}
+
+.menu1 {
+    text-decoration: none;
+    color: #5E286D;
+    text-shadow: 2px 2px white;
+    font-family: "myFont", "Orbitron", sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 12px;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu1:hover {
+    background-color: #b286be;
+    padding: 30px;
+    transition: 1s;
+}
+
+.mini-bio {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-mini-bio {
+    width: 50%;
+    text-align: left;
+}
+
+H2 {
+    font-size: 64px;
+    font-family: "myFont", "Orbitron", sans-serif;
+    text-shadow: 10px 10px #5E286D;
+    text-align: left;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 24px;
+    font-family: "myFont2", "Montserrat", sans-serif;
+}
+
+ul{
+    font-size: 24px;
+    font-family: "myFont2", "Montserrat", sans-serif;
+}
+
+.text-mini-bio p {
+    font-size: 24px;
+    font-family: "myFont2", "Montserrat", sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.mini-bio img {
+    margin-top: 200px;
+    box-shadow: 40px 40px #5E286D;
+    border-color: #cc99db;
+    border-width: 10px;
+    border-style: solid;
+    margin-left: 50px;
+}
+
+.photo-mini-bio {
+    width: 50%;
+}
+
+.ligne {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card{
+    width: 500px;
+    height: 600px;
+    margin: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #5E286D;
+    box-shadow: 40px 40px #cc99db;
+    position: relative;
+    overflow: hidden;
+}
+
+.card img{
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-projet{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #5E286D;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    z-index: 1;
+    transition: top 0.3s ease;
+}
+
+.card-projet h3, .card-projet p{
+    position: relative;
+    z-index: 2;
+}
+
+.card-projet h3{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "myfont", "Orbitron", sans-serif;
+    text-shadow: #260630 5px 5px;
+    padding-left: 5px;
+    text-align: center;
+    color:white;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    background-color: #5E286D;
+}
+
+.card-projet p{
+    display:none;
+    font-family: "myFont2", "Montserrat", sans-serif;
+    text-shadow: #9468a0 2px 2px;
+    font-size: 20px;
+    z-index: 2;
+    position: relative;
+    top: 0;
+}
+
+.card:hover .card-projet{
+    top: 25%;
+}
+
+.card:hover p{
+    display:block;
+    padding-left: 5px;
+    color:white;
+    z-index: 2;
+    position: relative;
+    top: 0;
+    background-color: #5E286D;
+    padding: 50px;
+}
+
+.card-exp-pro {
+    background-color: #cc99db;
+    box-shadow: 40px 40px #5E286D;
+    transition: 0.3s;
+    width: 80%;
+    height: 350px;
+    margin-left : 150px;
+    margin-bottom : 40px;
+    padding: 0;
+}
+
+.card-exp-pro H3 {
+    font-size: 40px;
+    text-shadow: 5px 5px white;
+    color :#5E286D;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-family: "myFont", "Orbitron", sans-serif;
+    font-weight: bold;
+    text-align: left;
+}
+
+.card-exp-pro p {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    background-color: #9468a0;
+    border-radius: 40px;
+    text-align: left;
+
+}
+
+.card-exp-pro ul {
+    padding-left: 40px;
+    font-family: "myFont2", "Montserrat", sans-serif;
+    font-size: 24px;
+    text-shadow: #9468a0 2px 2px;
+    text-align: left;
+}
+
+.card-exp-pro-text{
+    background-color: #9468a0;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding :10px;
+}
+
+.card-exp-pro:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+
+
+.compétences {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    overflow: hidden;
+    width: 80%;
+    max-width: 905px;
+    max-height: 497px;
+    box-shadow: #5E286D 40px 40px;
+    margin-bottom: 50px;
+    border-color: #cc99db;
+    border-width: 10px;
+    border-style : solid;
+}
+
+.carroussel {
+    position: relative;
+}
+
+.carroussel-éléments {
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    flex-wrap: nowrap;
+}
+
+.carroussel-img {
+    transition: .5s ease-in-out;
+}
+
+.carroussel-img img {
+    object-fit: cover;
+}
+
+.carroussel-bouton {
+    position: absolute;
+    z-index: 10;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carroussel-bouton button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 20;
+}
+
+.carroussel-bouton button:hover {
+    transform: scale(1.2);
+}
+
+.carroussel-bouton button {
+    padding: 10px;
+}
+
+.carroussel-bouton button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.centres-interets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.centres-interets-gauche {
+    width: 50%;
+    margin-left: 20px;
+    margin-right : 100px;
+}
+
+.centres-interets-droite {
+    width: 50%;
+}
+
+
+.card-centres-interets {
+    background-color: #cc99db;
+    box-shadow: 40px 40px #5E286D;
+    transition: 0.3s;
+    width: 465px;
+    height: 700px;
+    margin-bottom: 100px;
+    padding: 0;
+}
+
+.card-centres-interets img {
+    padding: 20px;
+    margin: 10px;
+}
+
+.card-centres-interets H3 {
+    font-size: 40px;
+    font-family: "myFont", "Orbitron", sans-serif;
+    text-shadow: 5px 5px white;
+    color :#5E286D;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card-centres-interets ul {
+    font-size: 24px;
+    font-family: "myFont2", "Montserrat", sans-serif;
+    border-radius: 40px;
+    margin-left: 30px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+
+.liste-centres-interets {
+    background-color: #9468a0;
+    border-radius: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card-centres-interets:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.engagement-text{
+    text-align: left;
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+.engagement-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-engagement {
+    width: 1120px;
+    height: 875px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box1{
+    width: 337px;
+    height: 549px;
+    margin : 20px;
+    grid-column : 1/4;
+    grid-row : 1/4;
+}
+
+.box2{
+    width: 707px;
+    height: 247px;
+    margin : 20px;
+    grid-column : 1/4;
+    grid-row : 3/4;
+}
+
+.box3 {
+    width: 325px;
+    height: 257px;
+    margin: 20px;
+    grid-column : 2/4;
+    grid-row : 2/4;
+}
+
+.box4{
+    width: 707px;
+    height: 247px;
+    margin : 20px;
+    grid-column : 2/4;
+    grid-row : 1/4;
+}
+
+.box5{
+    width: 337px;
+    height: 549px;
+    margin : 20px;
+    grid-row: 2/4;
+    grid-column: 3/4;
+}
+
+.footer-contact{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.CV{
+    width: 50%;
+    margin-left: 100px;
+}
+
+.CV img{
+    box-shadow:#cc99db 40px 40px;
+}
+
+.social-content {
+    width: 50%;
+    margin-top: 50px;
+}
+
+.social{
+    margin-right: 400px;
+    margin-top : 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social h3{
+    font-size: 30px;
+    font-family: "myFont", "Orbitron", sans-serif;
+    text-shadow: 5px 5px #9468a0;
+}
+
+
+
+
+
+
+
+
